@@ -59,7 +59,7 @@ void callback(char *topic, byte *payload, unsigned int length)
     myservo.write(180);
     delay(time_interval);
   }
-  else if (topic_str == "b6310500287/time_interval")
+  if (topic_str == "b6310500287/time_interval")
   {
     time_interval = atoi((char *)payload) * 1000;
     Serial.println(time_interval);
@@ -92,7 +92,7 @@ void setup()
   connectToWiFi();
   mqtt.setServer(MQTT_BROKER, MQTT_PORT);
   mqtt.setCallback(callback);
-  time_interval = get_time_interval();
+  time_interval = get_time_interval() * 1000;
 }
 
 void loop()
@@ -109,6 +109,7 @@ void loop()
       {
         Serial.println("Connected.... Success");
         mqtt.subscribe("b6310500287/send_feed_time");
+        mqtt.subscribe("b6310500287/time_interval");
       }
     }
   }
