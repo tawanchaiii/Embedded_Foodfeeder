@@ -63,8 +63,8 @@ char buf1[] = "0x11"; //<-- menu will edit this text
 
 int chooseTest = 2;
 int listColor = 1;
-int timeinterval = 10;
-int feedtime = 10;
+int timeinterval = 1;
+int feedtime = 1;
 int ledCtrl = LOW;
 
 
@@ -186,14 +186,14 @@ CHOOSE(listColor, chooseColor, "Color: ", doNothing, noEvent, noStyle,
   VALUE("Blue", 3, setColor, enterEvent));
 
 CHOOSE(timeinterval, choosetinterval, "T_interval: ", doNothing, noEvent, noStyle, 
+  VALUE("1 s", 1, setInterval, enterEvent), 
   VALUE("3 s", 3, setInterval, enterEvent), 
-  VALUE("5 s", 5, setInterval, enterEvent), 
-  VALUE("10 s", 10, setInterval, enterEvent));
+  VALUE("5 s", 5, setInterval, enterEvent));
 
 CHOOSE(feedtime, choosefeedtime, "T_feed: ", doNothing, noEvent, noStyle, 
+  VALUE("1 s", 1, setFeed, enterEvent), 
   VALUE("3 s", 3, setFeed, enterEvent), 
-  VALUE("5 s", 5, setFeed, enterEvent), 
-  VALUE("10 s", 10, setFeed, enterEvent));
+  VALUE("5 s", 5, setFeed, enterEvent));
 
 // CHOOSE(chooseTest, chooseMenu, "Choose", doNothing, noEvent, noStyle, 
 //   VALUE("First", 1, doNothing, noEvent), 
