@@ -58,6 +58,7 @@ void callback(char *topic, byte *payload, unsigned int length)
     delay(500);
     myservo.write(180);
     delay(time_interval);
+    time_interval = get_time_interval() * 1000;
   }
   if (topic_str == "b6310500287/time_interval")
   {
