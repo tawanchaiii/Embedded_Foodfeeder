@@ -10,16 +10,41 @@
 6310503499 ภราดร วัชรเสมากุล<br>
 6310503545 รัฐธรรม เอิบอิ่มฤทธิ<br>
 
+## โครงสร้างไฟล์
+```
+.
+├── LICENSE.txt
+├── README.md
+├── Schematic.pdf
+├── backend
+│   ├── package.json
+│   ├── pnpm-lock.yaml
+│   └── server.js
+├── boards
+│   ├── board_6310500261
+│   ├── board_6310500287
+│   ├── board_6310503456
+│   ├── board_6310503499
+│   └── board_6310503545
+└── pic
+```
 
+Repository ดังกล่าวประกอบด้วยไฟล์ต่างๆ ดังนี้
+| ไฟล์/ไดเรคทอรี    | รายละเอียด                                                                       |
+|-----------------|---------------------------------------------------------------------------------|
+| `LICENSE.txt`   | แสดงเงื่อนไขการอนุญาตให้ผู้อื่นนำงานของตนเองไปใช้                                        |
+| `README.md`     | แสดงรายละเอียดของโปรเจค                                                          |
+| `Schematic.pdf` | ไฟล์แสดงแผนภาพ Schematic ของทั้ง 5 board                                            |
+| `backend`       | ไดเรคทอรีนี้ประกอบไปด้วย source code สำหรับ HTTP Backend Server                      |
+| `boards`        | ไดเรคทอรีนี้ประกอบไปด้วย source code ของทั้ง 5 board<br/>โดยชื่อไดเรคทอรีตั้งชื่อตามผู้รับผิดชอบ |
+| `pic`           | ไดเรคทอรีนี้ประกอบไปด้วยรูปภาพของสมาชิก <br/>รวมไปถึงรูปภาพของตัวชิ้นงาน                        |
 
-<script src="https://kit.fontawesome.com/a302d730af.js" crossorigin="anonymous"></script>
 
 <strong>
     <h2> 
-         ที่มาและความสำคัญ <i class="fa-solid fa-circle-info fa-bounce"></i>
+         ที่มาและความสำคัญ
     </h2> 
 </strong>
---- 
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 สัตว์เลี้ยงของเราต้องการอาหารเพื่อสร้างพลังงานและเพื่อพัฒนาการของมัน โดยสัตว์แต่ละชนิดก็ต่างมีข้อจำกัดของอาหารที่รับประทานที่แตกต่างกัน ดังนั้นสัตว์เลี้ยงแต่ละตัวจึงไม่สามารถรับประทานอาหารประเภทเดียวกันหรือปริมาณที่เท่ากันได้ ซึ่งเป็นปัญหาสำหรับผู้เลี้ยงที่มีสัตว์เลี้ยงหลายตัวภายในบ้าน พวกเราจึงมีแนวคิดที่จะประดิษฐ์อุปกรณ์เครื่องให้อาหารสัตว์อัตโนมัติที่สามารถแยกแยะชนิดของสัตว์เลี้ยงได้โดยจำแนกจากสีของเครื่องแต่งกายที่สัตว์เลี้ยงของเราสวมใส่อยู่ รวมถึงระบบแจ้งเตือนปริมาณอาหารภายในถังเก็บอาหาร และยังสามารถปรับปริมาณอาหารได้ตามต้องการ อีกทั้งยังมีระบบป้องกันการให้อาหารเกินความจำเป็น โดยการกำหนดระยะเวลาที่จะให้อาหารในครั้งถัดไปจากการให้อาหารครั้งก่อนหน้าได้
@@ -27,10 +52,9 @@
 
 <strong>
     <h2> 
-         ฟีเจอร์ที่สำคัญ <i class="fa-solid fa-star fa-bounce"></i>
+         ฟีเจอร์ที่สำคัญ 
     </h2> 
 </strong>
----
 
 
 - แผงควบคุมประกอบด้วยจอ OLED และปุ่มควบคุมเพื่อตั้งค่า
@@ -44,26 +68,31 @@
 
 <strong>
     <h2> 
-         แนวคิดและหลักการ <i class="fa-solid fa-book fa-bounce"></i>
+         แนวคิดและหลักการ 
     </h2> 
 </strong>
----
 
-<div style="text-align: center; margin: 5% 0%;">
-    <img src="https://files.tawanchai.com/embedded/flow.png" alt="Diagram" border="0" style="border-radius: 15px; height: 75%; width: 85%">
-        <div style="width: 100%; font-weight: bold; padding-top: 10px;">
-            แผนภาพแสดงการทำงานของทั้งระบบ
-  </div>
-    
-</div>
+<strong>
+    <p> 
+      แผนภาพแสดงการทำงานของทั้งระบบ
+    </p> 
+</strong>
 
-<div style="text-align: center; margin: 5% 0%;">
-    <img src="https://files.tawanchai.com/embedded/nodered.png" alt="Diagram" border="0" style="border-radius: 15px; height: 75%; width: 85%">
-        <div style="width: 100%; font-weight: bold; padding-top: 10px;">
-            ภาพแสดงองค์ประกอบของ Node-Red Dashboard
-  </div>
+
+
+<p align="center">
+  <img width="75%" height="75%" src="https://files.tawanchai.com/embedded/flow.png">
+</p>
+
+<strong>
+    <p> 
+        ภาพแสดงองค์ประกอบของ Node-Red Dashboard
+    </p> 
+</strong>
+<p align="center">
+  <img width="75%" height="75%" src="https://files.tawanchai.com/embedded/nodered.png">
+</p>
     
-</div>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 เครื่องให้อาหารสัตว์เลี้ยง ประกอบด้วย Microcontroller NodeMCU ESP-WROOM-32S ทั้งหมด 5 ตัว โดยแต่ละตัวทำหน้าที่ที่แตกต่างกัน ดังนี้
@@ -74,13 +103,9 @@
     </p> 
 </strong>
 
-<div style="text-align: center; margin: 5% 0% 3% 0%;">
-    <img src="https://files.tawanchai.com/embedded/board1_des.png" alt="Diagram" border="0" style="border-radius: 15px; height: 75%; width: 75%">
-        <div style="width: 100%; font-weight: bold; padding-top: 10px;">
-            ภาพองค์ประกอบของบอร์ดที่ 1
-  </div>
-    
-</div>
+<p align="center">
+  <img width="75%" height="75%" src="https://files.tawanchai.com/embedded/board1_des.png">
+</p>
 
 
 - ประกอบด้วย OLED 1 ตัวสำหรับแสดงผล และ ปุ่มกดทั้งหมด 3 ปุ่ม แทนการเลื่อนขึ้น เลื่อนลง และปุ่ม OK สำหรับเลือกเมนู
@@ -149,10 +174,9 @@
 
 <strong>
     <h2> 
-         อุปกรณ์ที่ใช้ <i class="fa-sharp fa-solid fa-screwdriver-wrench fa-bounce"></i>
+         อุปกรณ์ที่ใช้ 
     </h2> 
 </strong>
----
 
 - NodeMCU ESP-WROOM-32S [5 ตัว]
 - Push Button ขนาด 6 mm [3 ตัว]
@@ -162,14 +186,13 @@
 - Servo MG90S [2 ตัว]
 - Laser Head Transmitter Sensor Module KY-008 [1 ตัว]
 
----
 
 <strong>
     <h2> 
-         Development Tools <i class="fa-solid fa-code fa-bounce"></i>
+         Development Tools 
     </h2> 
 </strong>
----
+
 - **Hardware**
     - พัฒนาโดยใช้ <a href="https://platformio.org/" target="_blank"> PlatformIO</a> โดยใช้ในรูปแบบของ VSCode Extension
 - **Backend**
@@ -179,5 +202,3 @@
 - **Frontend**
     - พัฒนาบน Node-Red เข้าถึงได้ที่ <a href="https://red.tawanchai.com/ui/#!/0?socketid=jDoJNDb7RZkaeEbmAACK" target="_blank"> red.tawanchai.com</a>
 
-
-Source Code <i class="fa-brands fa-github fa-bounce fa-lg"></i> : <a href="https://github.com/tawanchaiii/Embedded_Foodfeeder">github.com/tawanchaiii/Embedded_Foodfeeder</a>
