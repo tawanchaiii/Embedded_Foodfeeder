@@ -124,6 +124,10 @@ Repository ดังกล่าวประกอบด้วยไฟล์ต
     </p> 
 </strong>
 
+<p align="center">
+  <img width="75%" height="75%" src="https://files.tawanchai.com/embedded/board2_des.png">
+</p>
+
 
 
 - ประกอบด้วย Ultrasonic Module จำนวน 1 ตัว โดยทำหน้าที่ในการวัดระดับอาหารที่อยู่ภายในถังอาหาร
@@ -139,6 +143,10 @@ Repository ดังกล่าวประกอบด้วยไฟล์ต
     </p> 
 </strong>
 
+<p align="center">
+  <img width="75%" height="75%" src="https://files.tawanchai.com/embedded/board3_des.png">
+</p>
+
 
 - ประกอบด้วย RGB Color Sensor Module 1 ตัว และ Ultrasonic Module 1 ตัว
 - บอร์ดนี้จะทำการตรวจจับสัตว์เลี้ยงที่จะเข้ามากินอาหาร เพื่อส่ง publish message ด้วย topic ของ MQTT เพื่อให้บอร์ดที่ 4 ทำงานต่อ
@@ -153,6 +161,10 @@ Repository ดังกล่าวประกอบด้วยไฟล์ต
     </p> 
 </strong>
 
+<p align="center">
+  <img width="75%" height="75%" src="https://files.tawanchai.com/embedded/board4_des.png">
+</p>
+
 
 - ประกอบด้วย Servo 1 ตัว, Laser 1 ตัว และ LDR 1 ตัว
 - โดยบอร์ดนี้จะมีหน้าที่ดังนี้
@@ -165,6 +177,10 @@ Repository ดังกล่าวประกอบด้วยไฟล์ต
          บอร์ดที่ 5 สำหรับควบคุมบานเปิดปิดอาหารที่ออกมาจากถังเก็บอาหาร
     </p> 
 </strong>
+
+<p align="center">
+  <img width="75%" height="75%" src="https://files.tawanchai.com/embedded/board5_des.png">
+</p>
 
 
 - ประกอบด้วย Servo 1 ตัว
